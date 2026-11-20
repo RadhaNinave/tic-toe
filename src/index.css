@@ -1,0 +1,89 @@
+body {
+  background-color: #e07470;
+}
+
+.game-card {
+  max-width: 320px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #111827;
+}
+
+.score {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+}
+
+.score-x {
+  color: #dc2626;
+  background-color: #fef2f2;
+}
+
+.score-o {
+  color: #2563eb;
+  background-color: #eff6ff;
+}
+
+.score-draw {
+  color: #111827;
+  background-color: #f9fafb;
+}
+
+.status {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  max-width: 240px;
+  margin: 0 auto;
+}
+
+.cell {
+  aspect-ratio: 1 / 1;
+  background-color: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #111827;
+  transition: background-color 0.15s, border-color 0.15s;
+}
+
+.cell:hover:not(:disabled) {
+  background-color: #f9fafb;
+}
+
+.cell:disabled {
+  cursor: default;
+}
+
+.cell.win {
+  border: 2px solid #22c55e;
+  color: #22c55e;
+}
+
+.btn-restart {
+  background-color: #2563eb;
+  border-color: #2563eb;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.btn-reset {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #111827;
+}
